@@ -23,12 +23,18 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 300px;
 }
 
-svg {
-width: 300px;
-height: 300px;
+.btn{
+    background-color: #505050;
+    color: #ffffff;
+    padding: 30px 80px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    border-radius: 15px;
+    position: absolute;
 }
 
 .overlay {
@@ -50,27 +56,16 @@ height: 300px;
     transition: .2s;
 }
 
-.wrapper .container{
+.container{
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: auto;   
+    visibility: hidden;
 }
 
-.btn{
-    background-color: #505050;
-    color: #ffffff;
-    padding: 30px 80px;
-    align-items: center;
-    display: inline-block;
-    text-align: center;
-    cursor: pointer;
-    user-select: none;
-    border-radius: 15px;
-    position: absolute;
-}
-    
-.wrapper .container .popup{
+.container .popup{
     color: #ffffff;
     background-color: #505050;
     border-radius: 15px;
@@ -85,7 +80,7 @@ height: 300px;
     visibility: hidden;
 }
 
-.wrapper .container .popup.active{
+.container .popup.active{
     background-color: #505050;
     color: #ffffff;
     padding: 30px 15px;

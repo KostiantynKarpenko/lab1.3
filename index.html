@@ -7,13 +7,12 @@
 
     <body>
         <a class="btn">Button</a>
-            <div class="container">
-                <div class="overlay"></div>
-                <div class="popup">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Illo molestiae possimus suscipit vero facere minima dolorum impedit! 
-                    Blanditiis, consectetur facilis.
-                </div>
+        <div class="container">
+            <div class="overlay"></div>
+            <div class="popup">
+                Popup seems to be working fine. Height of this popup is adjustable by the content.
+                Clicking out of the popup will cause closing it. Overlay listens to the click, and the popup, as the document, doesn't.
+                Looks like the work is done without using stopPropaganition() method.
             </div>
         </div>
     </body>
